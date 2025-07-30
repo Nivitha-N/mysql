@@ -31,6 +31,11 @@ select * from employee_details order by first_name desc,salary asc;
 select first_name,salary from employee_details where(salary>=50000)and(salary<=70000);
 select first_name from employee_details where (first_name="dhinesh" or first_name="gopinath");
 select first_name from employee_details where(not first_name="dhinesh" or first_name="gopinath");
+select * from employee_details where (salary >60000);
+select * from employee_details where salary between 50000 and 70000;
+select concat(first_name,' ',last_name) as full_name from employee_details where salary<50000;
+select first_name,salary from employee_details order by asc;
+select * from employee_details where salary between 50000 and 70000 order by first_name asc;
 
 
 
